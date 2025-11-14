@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Formulario>
+
+	<Menu>
+		<MenuItem texto="Archivo">
+			<MenuItem texto="Abrir" nombre="menuAbrir" />
+			<MenuItem texto="-" />
+			<MenuItem texto="Salir" nombre="menuSalir" />
+		</MenuItem>
+		<MenuItem texto="Ayuda">
+			<MenuItem texto="Acerca de..." nombre="menuAcerca" />
+		</MenuItem>
+	</Menu>
+
+	<Controles>
+
+		<Control
+		  tipo="Label"
+		  nombre="lblBienvenida"
+		  texto="Bienvenido a la aplicación (con extensiones)"
+		  posicion="10,40"
+		  tamano="280,23" />
+		<Control
+		  tipo="Button"
+		  nombre="btnAnadir"
+		  texto="Añadir"
+		  posicion="30,70"
+		  tamano="75,25" />
+		<Control
+		  tipo="Button"
+		  nombre="btnEditar"
+		  texto="Editar"
+		  posicion="110,70"
+		  tamano="75,25" />
+
+		<Control
+		  tipo="GroupBox"
+		  nombre="gbDatos"
+		  texto="Datos de Usuario"
+		  posicion="10, 110"
+		  tamano="280, 100">
+
+			<Control
+			  tipo="Label"
+			  nombre="lblNombre"
+			  texto="Nombre:"
+			  posicion="15, 30"
+			  tamano="60, 23" />
+			<Control
+			  tipo="TextBox"
+			  nombre="txtNombre"
+			  texto="Escribe aquí"
+			  posicion="80, 30"
+			  tamano="180, 23" />
+
+			<Control
+			  tipo="Label"
+			  nombre="lblEmail"
+			  texto="Email:"
+			  posicion="15, 60"
+			  tamano="60, 23" />
+			<Control
+			  tipo="TextBox"
+			  nombre="txtEmail"
+			  texto=""
+			  posicion="80, 60"
+			  tamano="180, 23" />
+		</Control>
+
+		<Control
+		  tipo="DataGridView"
+		  nombre="gridDemo"
+		  posicion="10, 220"
+		  tamano="280, 150">
+			<Columnas>
+				<Columna nombre="colId" header="ID" ancho="40" />
+				<Columna nombre="colNombre" header="Nombre" ancho="100" />
+				<Columna nombre="colEmail" header="Email" ancho="97" />
+			</Columnas>
+			<Filas>
+				<Fila>
+					<Celda>1</Celda>
+					<Celda>Ana</Celda>
+					<Celda>ana@mail.com</Celda>
+				</Fila>
+				<Fila>
+					<Celda>2</Celda>
+					<Celda>Luis</Celda>
+					<Celda>luis@mail.com</Celda>
+				</Fila>
+			</Filas>
+		</Control>
+
+	</Controles>
+</Formulario>
